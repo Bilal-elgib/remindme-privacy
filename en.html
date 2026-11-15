@@ -1,4 +1,63 @@
-<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy policy</title><style>
-:root{--bg:#FFFFFF;--fg:#111827;--muted:#64748B;--accent:#1578FF;--surface:#F4F7FB;}
-*{box-sizing:border-box}body{margin:0;padding:20px 18px 32px;background:var(--bg);color:var(--fg);font-family:Arial,Roboto,sans-serif;font-size:16px;line-height:1.65;overflow-wrap:anywhere}h1{font-size:24px;line-height:1.3;margin:0 0 18px;color:var(--fg)}h2{font-size:18px;line-height:1.4;margin:24px 0 8px;color:var(--accent)}p{margin:0 0 12px;color:var(--fg)}strong{color:var(--fg)}code{color:var(--accent);font-size:.92em}.meta{color:var(--muted);font-size:14px;margin-bottom:18px}
-</style></head><body><h1>Privacy policy</h1><p><strong>Last updated:</strong> 28 October 2026.</p><p>This policy explains how RemindMe handles information when you use the Android app. It is based on the current app behavior.</p><h2>Publisher and contact</h2><p>The app’s About screen identifies Bilal ELGIN as its developer. For privacy questions, contact <strong>bilal.elgin.info@gmail.com</strong>.</p><h2>Account and data sent to a server</h2><p>RemindMe does not offer account registration, cloud synchronization, or an app-operated server. This build does not request the INTERNET permission and does not automatically transmit saved app data. If you open an external Telegram link or use Android sharing, the action is initiated by you and is handled by the selected receiving app.</p><h2>Data processed in the app</h2><p>Information the user chooses to save may include titles, descriptions, locations, dates, times, repeat settings, note text, medication names and details, counter settings, sound options, language, theme, and notification preferences. Free-text fields and attached files may contain personal information that the user decides to enter. Some medication-related information may be sensitive or health-related.</p><p>For attachments, the user selects images or PDFs using the Android picker. RemindMe copies the selected content to the app's private internal storage. The code limits each file to 100 MB. Attachments are used to show a preview, open the document, or associate it with the relevant item.</p><h2>Storage and Android backup</h2><p>Appointments and other records are stored in a Room database and private app preferences; attachments are stored in the app’s internal directory. The manifest sets android:allowBackup="false", disabling Android Auto Backup for this app. Device-to-device transfer behavior can nevertheless vary by Android version and device manufacturer. The source does not indicate additional app-level encryption, and RemindMe has no built-in backup or restore function.</p><h2>Notifications and permissions</h2><p>RemindMe schedules notifications and alarms for features selected by the user. Android 13 and later may request notification permission. From Android 12, exact-alarm access is a special optional setting; without it, Android may deliver alerts later. On Android 14 and later, full-screen alarm access is separately controlled, and a standard notification remains available if it is denied. Camera permission is requested only when the user enables the flash option; it controls the torch and is not used to capture photos or video. Vibration, reboot restoration, wake locks, and foreground media playback support reminders. Android and device-maker restrictions may delay or limit delivery.</p><h2>Sharing with other apps</h2><p>The user can choose to share an appointment and, if desired, its attachments, or to open an attachment in another app. Android then displays compatible apps, and the transfer occurs only after the user's action. Shared text may contain the appointment title, date, time, location, and description. If the user chooses to include files, the relevant images or PDFs are sent to the receiving app with read access.</p><p>After this transfer, data processing is handled by the app and provider chosen by the user. Consult their respective policies. RemindMe does not control the data received or its retention by these third parties.</p><h2>Retention and deletion</h2><p>Items remain in the app until the user deletes them, clears app data, or uninstalls the app. RemindMe does not keep a server-side copy. Because Android Auto Backup is disabled in this build, app data is not included in that backup mechanism; device-to-device transfer can vary by manufacturer.</p><h2>Security</h2><p>Work data is stored in the private locations assigned to the app by Android. The code audit did not identify separate app-level encryption. Android Auto Backup is disabled in this build. Device security, screen lock, and any app selected for user-initiated sharing remain under the user’s control and the relevant providers’ policies.</p><h2>Children and audience</h2><p>The publisher must declare the target audience and minimum age in Google Play according to the intended use and content of the app. This policy does not presume that the app is, or is not, intended for children. If the audience or features change, this policy and the Play declarations must be updated.</p><h2>Changes and contact</h2><p>This policy may be updated if the app or its data practices change. For privacy questions, contact <strong>bilal.elgin.info@gmail.com</strong>.</p></body></html>
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RemindMe Privacy Policy</title>
+  <style>
+    :root{--bg:#fff;--fg:#111827;--muted:#64748b;--accent:#1578ff;--surface:#f4f7fb;--border:#dbe4ef}
+    *{box-sizing:border-box}
+    body{margin:0;padding:24px 18px 40px;background:var(--bg);color:var(--fg);font-family:Arial,Roboto,sans-serif;font-size:16px;line-height:1.65;overflow-wrap:anywhere}
+    main{max-width:900px;margin:0 auto}
+    h1{font-size:29px;line-height:1.25;margin:0 0 10px;color:var(--fg)}
+    h2{font-size:20px;line-height:1.35;margin:28px 0 9px;color:var(--accent)}
+    h3{font-size:17px;line-height:1.4;margin:20px 0 7px;color:var(--fg)}
+    p{margin:0 0 13px}
+    ul{margin:0 0 15px;padding-left:25px}
+    li{margin:0 0 7px}
+    a{color:var(--accent)}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:22px}
+    .notice{background:var(--surface);border-left:4px solid var(--accent);padding:14px 16px;margin:18px 0}
+  </style>
+</head>
+<body>
+<main>
+  <h1>RemindMe Privacy Policy</h1>
+  <li>The current analysis path does not use or download a separate Qwen model; it uses the local semantic engine and knowledge packs included in the app.</li>
+
+
+  <h2>7. Notifications, alarms, and permissions</h2>
+  <p>RemindMe uses the Android capabilities needed to deliver features you enable. Depending on your Android version and choices, these include:</p>
+  <ul>
+    <li><strong>Notifications:</strong> notification permission allows reminders and other alerts to be displayed. You can deny or change it in Android settings.</li>
+    <li><strong>Exact alarms and full-screen alerts:</strong> optional Android-controlled access can help alarms run close to the selected time or appear prominently. If access is denied, Android may deliver an alert later or use a standard notification instead.</li>
+    <li><strong>Vibration, wake lock, and foreground services:</strong> these support alert vibration, reminder delivery, alarm audio playback, and visible foreground downloads. Battery and device-maker policies can still delay or limit background behavior.</li>
+    <li><strong>Boot completion:</strong> after a device restart, the app can restore the scheduling information needed for reminders.</li>
+    <li><strong>Camera and microphone:</strong> these are requested only for the user-selected camera, flashlight, and voice features described above.</li>
+    <li><strong>Location:</strong> approximate or precise location is used only for the optional alarm-weather feature described above.</li>
+  </ul>
+  <p>Android may display permission prompts and control availability differently across versions and devices. RemindMe does not treat permission grants as a guarantee that Android will deliver every notification at the exact requested time.</p>
+
+  <h2>8. Sharing and opening files</h2>
+  <p>You may share an appointment and optionally its attachments, or open an attachment in another application. Shared text can include the title, date, time, location, and description. If you include files, the selected images or PDFs are provided to the receiving application with the access Android grants for that action. Processing after the transfer is controlled by the receiving application or service. Review its privacy policy before sharing.</p>
+
+  <h2>9. Retention and deletion</h2>
+  <p>RemindMe keeps saved items locally until you delete them, clear the app’s data, or uninstall the app. You can delete saved items using the deletion options available in the app; deleting an item removes its record and reminders. Cleanup of associated attachment files depends on the item type and may be deferred, so RemindMe does not promise that every associated file is removed immediately in every deletion flow. Temporary camera captures and temporary OCR page images are deleted after processing finishes or is cancelled.</p>
+  <p>Clearing app data or uninstalling RemindMe can permanently remove locally stored items. Android Auto Backup is disabled for this app, and RemindMe has no built-in backup or restore feature. Device-to-device transfer behavior may nevertheless vary by Android version and manufacturer. Network providers and third-party services may retain their own connection logs or data independently of RemindMe; deletion from RemindMe does not delete information already sent to those providers or shared with another app.</p>
+
+  <h2>10. Security</h2>
+  <p>RemindMe stores its working data in Android’s private app storage and does not identify separate app-level encryption in the supplied implementation. Model downloads use HTTPS and checksum verification. No security measure can eliminate every risk. Protect your device, screen lock, Android account, and any third-party application with access to information you choose to share.</p>
+
+  <h2>11. Legal bases and GDPR rights</h2>
+  <p>Where the General Data Protection Regulation (GDPR) applies, RemindMe processes local app data to provide the features you request, based on performance of the service you choose to use. Permission-based features, such as location, camera, microphone, and notifications, depend on your choice and can generally be disabled in Android settings. Optional model downloads and optional weather use also depend on your choice. Where a legitimate interest or another lawful basis applies to limited technical or security processing, the applicable basis is assessed in context.</p>
+  <p>Subject to the GDPR and its conditions, you may have the right to request access to your personal data, correction of inaccurate data, erasure, restriction of processing, portability of data you provided, and to object to processing based on legitimate interests. Where processing is based on consent, you may withdraw consent at any time; withdrawal does not affect processing that occurred before withdrawal. You may also lodge a complaint with the data-protection supervisory authority in your country or place of residence.</p>
+  <p>Because RemindMe is primarily local and has no app-operated account server, you can usually exercise access, correction, and deletion directly by reviewing or editing items in the app, deleting items, clearing app data, disabling permissions, or uninstalling the app. These local actions do not control copies held by Android speech providers, Open-Meteo, Hugging Face, GitHub, Pastebin, a receiving app, or another website. For a request concerning processing for which you need the developer’s assistance, use the public repository contact route in section 1.</p>
+
+  <h2>12. Children</h2>
+  <p>RemindMe is a general productivity app and is not designed for children. It is not directed specifically at children, and the developer does not knowingly seek personal information from children through an account or profile system.</p>
+
+  <h2>13. Changes to this policy</h2>
+  <p>I may update this policy when RemindMe’s features, permissions, network resources, or data practices change. The “Last updated” date identifies the current version. Continued use of a changed version means that you have had an opportunity to review the updated policy.</p>
+</main>
+</body>
+</html>
