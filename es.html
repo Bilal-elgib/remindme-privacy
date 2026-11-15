@@ -1,72 +1,13 @@
-<!doctype html>
-<html lang="es" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de privacidad de RemindMe</title>
-  <style>
-    :root{--bg:#fff;--fg:#111827;--muted:#64748b;--accent:#1578ff;--surface:#f4f7fb}
-    *{box-sizing:border-box}
-    body{margin:0;padding:20px 18px 32px;background:var(--bg);color:var(--fg);font-family:Arial,Roboto,sans-serif;font-size:16px;line-height:1.65;overflow-wrap:anywhere}
-    main{max-width:900px;margin:0 auto}
-    h1{font-size:26px;line-height:1.3;margin:0 0 18px;color:var(--fg)}
-    h2{font-size:19px;line-height:1.4;margin:28px 0 9px;color:var(--accent)}
-    h3{font-size:17px;line-height:1.4;margin:20px 0 7px;color:var(--fg)}
-    p{margin:0 0 13px;color:var(--fg)}
-    ul{margin:0 0 14px;padding-left:24px}
-    li{margin:0 0 7px}
-    strong{color:var(--fg)}
-    a{color:var(--accent)}
-    .meta{color:var(--muted);font-size:14px;margin-bottom:20px}
-    .notice{background:var(--surface);border-left:4px solid var(--accent);padding:12px 14px;margin:0 0 20px}
-  </style>
-</head>
-<body>
-<main>
-  <h1>Política de privacidad de RemindMe</h1>
-  <p>El flujo de análisis actual no utiliza ni descarga un modelo Qwen separado; usa el motor semántico local y los paquetes incluidos en la aplicación.</p>
-
-  <p>Las descargas de los modelos se realizan en primer plano mediante el servicio de sincronización de Android, pueden reanudarse y se guardan en cachés privadas de la aplicación. El host externo puede recibir metadatos habituales de la conexión, como la dirección IP, la URL solicitada, la fecha y datos del dispositivo o del protocolo. El tráfico de descarga no incluye por sí mismo tus recordatorios, documentos, imágenes ni transcripciones. La disponibilidad, retención y registros de esos servicios dependen de sus respectivos proveedores.</p>
-
-  <h2>9. Comprobaciones de actualizaciones</h2>
-  <p>RemindMe puede consultar el contenido público de <a href="https://pastebin.com/raw/CJNUCKh2">Pastebin</a> para comprobar información de actualización. Si la respuesta incluye un enlace y tú eliges abrirlo, Android lo entrega a la aplicación que selecciones. Pastebin y el sitio enlazado pueden recibir metadatos de conexión y aplicar sus propias políticas.</p>
-
-  <h2>10. Notificaciones y permisos de Android</h2>
-  <p>RemindMe utiliza las funciones de Android para programar y mostrar las alarmas y notificaciones que configuras. Según tu versión de Android y tus ajustes, puede solicitar o utilizar los siguientes permisos y capacidades:</p>
-  <ul>
-    <li><strong>Notificaciones:</strong> permiten mostrar recordatorios; puedes rechazarlas o cambiarlas en los ajustes del sistema.</li>
-    <li><strong>Alarmas exactas:</strong> en Android 12 y posteriores son un acceso especial opcional que ayuda a ejecutar una alarma cerca de la hora elegida. Si no se concede, Android puede retrasarla.</li>
-    <li><strong>Actividad en segundo plano:</strong> la restauración después de reiniciar, los bloqueos de activación, el servicio en primer plano y la reproducción de audio ayudan a entregar recordatorios. Las políticas de batería del dispositivo pueden limitar o retrasar esa entrega.</li>
-    <li><strong>Vibración:</strong> se utiliza para las notificaciones cuando la activas y el dispositivo la permite.</li>
-    <li><strong>Cámara:</strong> se solicita cuando eliges hacer una foto para OCR y puede solicitarse al activar la linterna. En la función de foto se utiliza para la vista previa y la imagen fija que pides; en la función de linterna controla el flash. No se activa de forma continua.</li>
-    <li><strong>Micrófono:</strong> se solicita solo cuando eliges el dictado por voz.</li>
-    <li><strong>Archivos seleccionados:</strong> Android concede acceso a las imágenes o PDF que seleccionas; RemindMe no declara un permiso general para leer todo el almacenamiento externo.</li>
-    <li><strong>Ubicación aproximada o precisa:</strong> se utiliza solo para personalizar el tiempo meteorológico de una alarma cuando activas esa función.</li>
-    <li><strong>Pantalla completa y política de notificaciones:</strong> Android puede controlar por separado las alertas de pantalla completa y el comportamiento de no molestar. Si no se conceden, puede seguir disponible una notificación estándar.</li>
-  </ul>
-  <p>Android o el fabricante pueden cambiar la disponibilidad, restringir permisos o retrasar alarmas y notificaciones. La aplicación no usa el permiso de cámara para vigilarte ni el permiso de ubicación para publicidad.</p>
-
-  <h2>11. Enlaces externos, compartir y terceros</h2>
-  <p>Cuando eliges compartir un recordatorio, abrir un adjunto en otra aplicación o abrir un enlace externo, Android muestra las aplicaciones compatibles y la acción se inicia por tu decisión. El contenido compartido puede incluir el título, fecha, hora, lugar, descripción y los archivos que elijas. La aplicación receptora y su proveedor pasan a controlar el tratamiento, la seguridad y la conservación de esos datos.</p>
-  <p>RemindMe contiene enlaces o acciones que pueden abrir Telegram, enlaces de actualización, Hugging Face, GitHub Raw, Open-Meteo, Pastebin y otros destinos proporcionados por el contenido de actualización. Al abrirlos, el sitio o la aplicación externa puede recibir la URL, los datos que el navegador o sistema transmita y metadatos técnicos. RemindMe no controla lo que esos terceros hacen después de que abandones la aplicación; consulta sus políticas antes de utilizar sus servicios.</p>
-
-  <h2>12. Conservación, eliminación y copias de seguridad</h2>
-  <p>Conservo localmente tus elementos y preferencias mientras permanezcan en la aplicación o hasta que los elimines. Puedes eliminar los elementos mediante las opciones disponibles en RemindMe. Al eliminarlos se quita su registro y se cancelan sus recordatorios; la limpieza de archivos adjuntos depende del tipo de elemento y del flujo utilizado, por lo que un archivo asociado puede no desaparecer de forma inmediata en todos los casos.</p>
-  <p>También puedes borrar los datos de RemindMe desde los ajustes de Android o desinstalar la aplicación. Estas acciones pueden eliminar permanentemente los datos locales y las cachés. El manifiesto de esta versión desactiva Android Auto Backup y RemindMe no incluye una copia de seguridad propia, aunque la transferencia entre dispositivos puede variar según la versión de Android y el fabricante.</p>
-  <p>Los archivos descargados de modelos, las páginas de imagen temporales y otros datos de caché se conservan solo mientras son necesarios para la función o hasta que Android o la aplicación los limpie. La eliminación local no puede borrar copias que ya hayas compartido con otra aplicación ni registros que un proveedor externo haya creado conforme a su política.</p>
-
-  <h2>13. Seguridad</h2>
-  <p>RemindMe guarda los datos locales en las ubicaciones privadas asignadas por Android y verifica las sumas de comprobación de los modelos descargados antes de usarlos. La aplicación no implementa un cifrado adicional propio identificado en la auditoría del código. La seguridad del dispositivo, el bloqueo de pantalla, los permisos del sistema y las aplicaciones externas que elijas también influyen en la protección de la información. Ningún método de almacenamiento o transmisión ofrece una garantía absoluta.</p>
-
-  <h2>14. Base jurídica y derechos del RGPD</h2>
-  <p>Cuando se aplica el Reglamento General de Protección de Datos (RGPD), el tratamiento local necesario para prestar las funciones que solicitas se basa en la ejecución de esas funciones; los permisos, el uso de la cámara, el micrófono, la ubicación y las descargas de modelos se basan en tu elección y consentimiento expresado mediante Android o la aplicación. Las conexiones a recursos públicos y la seguridad y mantenimiento técnico pueden apoyarse en intereses legítimos, cuando corresponda. El proveedor del dictado y los demás terceros determinan por separado sus propias bases jurídicas.</p>
-  <p>Si el RGPD se aplica a tu situación, puedes solicitar, según las condiciones legales aplicables, acceso a tus datos personales, rectificación, supresión, limitación del tratamiento, oposición y portabilidad, así como retirar un consentimiento futuro. Para los datos que RemindMe mantiene localmente, puedes ejercer muchos de estos controles directamente editando o eliminando elementos, revocando permisos, borrando los datos de la aplicación o desinstalándola. Para ejercer un derecho o plantear una reclamación, utiliza el <a href="https://github.com/Bilal-elgib/remindme-privacy">repositorio público de privacidad</a>; también puedes presentar una reclamación ante la autoridad de protección de datos competente. Los derechos pueden estar sujetos a excepciones y requisitos de verificación previstos por la ley.</p>
-
-  <h2>15. Menores</h2>
-  <p>RemindMe es una aplicación general de productividad y no está diseñada para niños. No la dirijo específicamente a menores ni solicito conscientemente datos de niños. Si crees que un menor nos ha proporcionado datos personales a través de una función o de un canal externo, comunícalo mediante el repositorio público de privacidad.</p>
-
-  <h2>16. Cambios en esta política</h2>
-  <p>Puedo actualizar esta política cuando cambien RemindMe, sus funciones, sus permisos o los servicios externos utilizados. Publicaré la versión revisada en este repositorio y actualizaré la fecha de “Última actualización”. Te recomiendo consultar esta página periódicamente.</p>
-</main>
-</body>
-</html>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Política de privacidad — RemindMe</title><style>body{font-family:system-ui,-apple-system,sans-serif;max-width:850px;margin:0 auto;padding:24px;line-height:1.6;color:#202124}h1{color:#5428b8}h2{margin-top:2em;color:#33205f}a{color:#5428b8}</style></head><body><h1>Política de privacidad</h1><p><strong>RemindMe</strong></p>
+<p>RemindMe es una aplicación de utilidad para recordatorios, alarmas, citas, notas, objetivos, contadores y horarios de medicación. Publico y opero RemindMe. Esta política explica el tratamiento que realiza la aplicación Android.</p>
+<h2>1. Responsable y contacto</h2><p>Soy el responsable del tratamiento de los datos personales tratados por RemindMe. Para consultas sobre privacidad o solicitudes relativas a sus derechos, puede ponerse en contacto conmigo en <a href="mailto:bilal.elgin.info@gmail.com">bilal.elgin.info@gmail.com</a>.</p>
+<h2>2. Datos tratados</h2><p>RemindMe puede almacenar los recordatorios, citas, fechas, horas, lugares, descripciones, notas, datos sobre medicamentos, ajustes de alarma, contadores, archivos adjuntos y otra información que usted decida introducir o guardar. El texto, las imágenes, las páginas PDF y los resultados del reconocimiento de voz se procesan únicamente cuando usted solicita la función correspondiente. La ubicación es opcional y se utiliza para consultar el tiempo asociado a las alarmas; las últimas coordenadas y la hora autorizadas pueden almacenarse localmente. La aplicación no requiere una cuenta ni recopila intencionadamente identificadores publicitarios, perfiles analíticos o listas de contactos.</p>
+<h2>3. Tratamiento local y comprensión inteligente</h2><p>El motor semántico determinista analiza el texto en el teléfono y extrae posibles fechas, horas, direcciones, personas, organizaciones, recordatorios y campos de formulario. El OCR utiliza PaddleOCR-VL localmente, una vez que obtengo su confirmación para descargar el modelo. El modelo OCR y el modelo de lenguaje local opcional se verifican antes de la instalación. No se envía a ningún servidor de IA texto de recordatorios, notas guardadas, documentos OCR ni datos de entrada del análisis semántico local. Los resultados son sugerencias: usted los revisa y guarda por su cuenta.</p>
+<h2>4. Voz y servicios externos de voz</h2><p>El dictado por voz utiliza el servicio de reconocimiento de voz de Android seleccionado en su dispositivo. Dicho servicio puede procesar el audio en el dispositivo o enviarlo a su proveedor, y puede requerir conexión a Internet. El proveedor controla ese tratamiento conforme a sus propias condiciones. RemindMe no crea una grabación de audio permanente; el texto reconocido se muestra para que usted lo revise.</p>
+<h2>5. Servicios de red</h2><p>Cuando utiliza la función correspondiente, la aplicación puede conectarse a Hugging Face para descargar un modelo con su consentimiento, a GitHub para comprobar si hay actualizaciones opcionales de conocimientos semánticos, a Pastebin para consultar metadatos opcionales de actualizaciones y a Open-Meteo para obtener información meteorológica de una ubicación autorizada. Estos servicios reciben datos ordinarios de conexión o de solicitud y, cuando corresponda, las coordenadas solicitadas o una solicitud pública de actualización/modelo; RemindMe no les envía sus recordatorios guardados ni sus documentos OCR. Los enlaces externos, el uso compartido y la instalación de una actualización se inician por el usuario.</p>
+<h2>6. Permisos</h2><p>La cámara se solicita únicamente para tomar una foto. El micrófono se solicita únicamente para el dictado. La ubicación se solicita únicamente para consultar el tiempo opcional asociado a las alarmas. Los permisos de notificaciones, alarmas exactas, vibración, acceso a alarmas en pantalla completa, recepción al iniciar el dispositivo y servicios en primer plano permiten las funciones de recordatorios, alarmas y descargas o análisis iniciados por el usuario. Internet se utiliza para los servicios de red descritos anteriormente. Puede rechazar los permisos opcionales; en ese caso, es posible que la función correspondiente no esté disponible, mientras que los recordatorios habituales seguirán funcionando.</p>
+<h2>7. Almacenamiento y conservación</h2><p>Los datos guardados permanecen en el almacenamiento privado de la aplicación hasta que usted los elimine, retire el elemento o desinstale la aplicación. Los archivos temporales de la cámara se eliminan después del procesamiento o de la cancelación. Una descarga de modelo cancelada puede conservar un modelo parcial no instalado para que se pueda reanudar en un intento posterior aprobado por el usuario; no se considera utilizable hasta que la verificación se complete correctamente. Las copias de seguridad de Android están deshabilitadas en el manifiesto.</p>
+<h2>8. Bases jurídicas y divulgación</h2><p>Trato los datos que usted introduce para proporcionar las funciones solicitadas de la aplicación, sobre la base de la ejecución del servicio solicitado y, cuando corresponda, de su consentimiento para los permisos o las descargas opcionales. Me baso en intereses legítimos para mantener la seguridad y los mecanismos opcionales de actualización. No vendo datos personales ni comparto contenido de recordatorios guardados con fines publicitarios. Un proveedor externo de reconocimiento de voz, un servicio meteorológico o un servidor de descargas puede tratar metadatos de red, y el proveedor de reconocimiento de voz puede tratar el audio tal como se describe anteriormente.</p>
+<h2>9. Derechos y reclamaciones</h2><p>Puede solicitar acceso, rectificación, supresión o limitación del tratamiento, así como información sobre este, enviándome un correo electrónico. Puede retirar en cualquier momento su consentimiento para un permiso o una función opcional; esto no afecta a la licitud del tratamiento efectuado con anterioridad. Puede presentar una reclamación ante la autoridad de control, incluida la CNIL en Francia. Responderé dentro del plazo exigido por la legislación aplicable.</p>
+<h2>10. Menores y cambios</h2><p>RemindMe es una aplicación de utilidad de recordatorios de propósito general y no tiene restricciones de edad específicas para sus funciones. No la diseño deliberadamente para recopilar datos personales de menores. Puedo actualizar esta política cuando cambie el tratamiento de la aplicación y publicaré la versión vigente en la dirección de la política.</p>
+</body></html>

@@ -1,55 +1,13 @@
-<!doctype html>
-<html lang="de" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Datenschutzerklärung für RemindMe</title>
-  <style>
-    :root{--bg:#fff;--fg:#111827;--muted:#64748b;--accent:#1578ff;--surface:#f4f7fb}
-    *{box-sizing:border-box}
-    body{margin:0;padding:20px 18px 36px;background:var(--bg);color:var(--fg);font-family:Arial,Roboto,sans-serif;font-size:16px;line-height:1.65;overflow-wrap:anywhere}
-    main{max-width:900px;margin:0 auto}
-    h1{font-size:25px;line-height:1.3;margin:0 0 18px}
-    h2{font-size:19px;line-height:1.4;margin:28px 0 9px;color:var(--accent)}
-    h3{font-size:17px;line-height:1.4;margin:20px 0 7px}
-    p{margin:0 0 13px}
-    ul{margin:0 0 14px;padding-left:24px}
-    li{margin:0 0 7px}
-    a{color:var(--accent)}
-    .meta{color:var(--muted);font-size:14px;margin-bottom:20px}
-    .note{background:var(--surface);border-left:4px solid var(--accent);padding:12px 14px;margin:16px 0}
-  </style>
-</head>
-<body>
-<main>
-  <h1>Datenschutzerklärung für RemindMe</h1>
-  <li>Der aktuelle Analysepfad verwendet kein separates Qwen-Modell und lädt es nicht herunter; er nutzt das lokale Semantikmodul und die enthaltenen Wissenspakete.</li>
-
-
-  <h2>Benachrichtigungen, Alarme und Geräteberechtigungen</h2>
-  <p>RemindMe verwendet Benachrichtigungen, geplante Alarme, Vibration, Wiederherstellung nach einem Neustart, Wake Locks und Vordergrunddienste, damit du die von dir aktivierten Erinnerungen erhältst. Dafür können Android-Berechtigungen wie Benachrichtigungen, exakte Alarme, Vibration, Vordergrunddienste, Start nach dem Booten und gegebenenfalls Vollbildbenachrichtigungen erforderlich sein. Android 12 und höher behandelt den Zugriff auf exakte Alarme als gesonderte Einstellung; Android 14 und höher steuert den Vollbildzugriff separat. Wenn du Berechtigungen ablehnst oder System- und Herstellerregeln die Hintergrundausführung einschränken, können Hinweise verspätet erscheinen oder ausbleiben.</p>
-  <p>Die Berechtigung „Über anderen Apps anzeigen“ ist im Manifest deklariert und kann in den Systemeinstellungen angeboten werden, ist nach dem geprüften Code aber nicht für die Kernfunktionen erforderlich. Die Benachrichtigungsberechtigung kannst du in Android erteilen, ablehnen oder später ändern. Die App verwendet keinen allgemeinen Zugriff auf externen Speicher; bei Dateien erhält sie nur den Zugriff, den du im Android-Auswahldialog für die ausgewählten Bilder oder PDFs gewährst.</p>
-
-  <h2>Teilen und von dir geöffnete externe Links</h2>
-  <p>Wenn du einen Termin oder einen Anhang über die Android-Teilen-Funktion weitergibst, wird der von dir ausgewählte Text und gegebenenfalls die ausgewählte Datei an die von dir gewählte Empfänger-App übergeben. Dazu können Titel, Datum, Uhrzeit, Ort und Beschreibung gehören. Nach der Übergabe bestimmen die ausgewählte App und ihr Anbieter, wie die Daten verarbeitet, gespeichert oder weitergegeben werden.</p>
-  <p>RemindMe kann außerdem von dir ausgewählte externe Links öffnen, etwa einen Telegram-Link, einen Link aus einer Update-Information, einen Link zur Datenschutzerklärung oder einen von dir geöffneten Anhang. Android übergibt den Link an die ausgewählte Browser- oder andere App. Der jeweilige Drittanbieter kann dabei den Link, deine IP-Adresse und weitere technische Daten verarbeiten. Diese Verarbeitung findet außerhalb von RemindMe statt und richtet sich nach der Datenschutzerklärung des jeweiligen Anbieters.</p>
-
-  <h2>Aufbewahrung und Löschung</h2>
-  <p>Deine lokal gespeicherten Einträge bleiben erhalten, bis du sie in RemindMe löschst, die App-Daten entfernst oder die App deinstallierst. Die in der App verfügbaren Löschfunktionen entfernen den betreffenden Datensatz und seine Erinnerungen. Das Entfernen zugehöriger Anhänge kann je nach Eintragstyp und Ablauf verzögert erfolgen; ich garantiere nicht, dass jede verknüpfte Datei in jedem Ablauf sofort gelöscht wird. Temporäre OCR-Dateien werden nach der Verarbeitung oder dem Abbruch gelöscht.</p>
-  <p>Du kannst die lokalen App-Daten über die Android-Systemeinstellungen löschen oder RemindMe deinstallieren. Das kann lokal gespeicherte Einträge, Einstellungen, Modell- und Cache-Dateien dauerhaft entfernen. Android Auto Backup ist in diesem Build deaktiviert; das Verhalten einer geräteabhängigen Übertragung kann sich jedoch je nach Android-Version und Hersteller unterscheiden. RemindMe bietet keine eigene Sicherungs- oder Wiederherstellungsfunktion.</p>
-
-  <h2>Schutz der Daten</h2>
-  <p>RemindMe legt lokale Daten in den von Android geschützten privaten Speicherbereichen der App ab. Der geprüfte Code weist keine zusätzliche, app-eigene Verschlüsselung der gespeicherten Daten aus. Schütze daher dein Gerät mit den von Android angebotenen Sicherheitsfunktionen und teile Inhalte nur mit Apps, denen du vertraust. Keine technische Maßnahme kann Risiken vollständig ausschließen.</p>
-
-  <h2>Rechtsgrundlagen nach der DSGVO</h2>
-  <p>Soweit die Datenschutz-Grundverordnung (DSGVO) auf deine Nutzung Anwendung findet, verarbeite ich lokal gespeicherte Inhalte grundsätzlich, um die von dir angeforderten App-Funktionen bereitzustellen (Art. 6 Abs. 1 lit. b DSGVO) oder aufgrund deiner Entscheidung, die jeweiligen Funktionen und Berechtigungen zu nutzen (Art. 6 Abs. 1 lit. a DSGVO). Netzwerkzugriffe für Modell- und Wissensdownloads, Wetter und Update-Prüfungen erfolgen zur Bereitstellung der von dir aufgerufenen Funktion; soweit erforderlich, stütze ich sie auf deine Einwilligung oder ein berechtigtes Interesse an einem funktionierenden und aktuellen Dienst (Art. 6 Abs. 1 lit. a oder f DSGVO). Die Rechtsgrundlage kann je nach konkreter Nutzung und anwendbarem Recht unterschiedlich sein.</p>
-
-  <h2>Deine Rechte</h2>
-  <p>Wenn die DSGVO auf dich anwendbar ist, hast du insbesondere das Recht auf Auskunft über personenbezogene Daten, Berichtigung unrichtiger Daten, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen Verarbeitungen, die auf berechtigten Interessen beruhen. Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen; die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt. Du hast außerdem das Recht, dich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>
-  <p>Für die lokalen Inhalte kannst du die in der App verfügbaren Löschfunktionen, das Löschen der App-Daten oder die Deinstallation verwenden. Für Daten, die ein externer Anbieter bei Modell-Downloads, Spracherkennung, Wetter, Updates, Browsern oder Empfänger-Apps verarbeitet, musst du dich gegebenenfalls direkt an diesen Anbieter wenden. Für eine Anfrage an mich kannst du das oben verlinkte öffentliche Datenschutz-Repository verwenden.</p>
-
-  <h2>Änderungen dieser Datenschutzerklärung</h2>
-  <p>Ich kann diese Datenschutzerklärung ändern, wenn sich RemindMe, seine Funktionen, Berechtigungen oder die eingesetzten Netzwerkressourcen ändern. Die jeweils aktuelle Fassung wird im öffentlichen Datenschutz-Repository und, soweit vorgesehen, in der App bereitgestellt. Das Datum der letzten Aktualisierung steht am Anfang dieser Erklärung.</p>
-</main>
-</body>
-</html>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Datenschutzerklärung — RemindMe</title><style>body{font-family:system-ui,-apple-system,sans-serif;max-width:850px;margin:0 auto;padding:24px;line-height:1.6;color:#202124}h1{color:#5428b8}h2{margin-top:2em;color:#33205f}a{color:#5428b8}</style></head><body><h1>Datenschutzerklärung</h1><p><strong>RemindMe</strong></p>
+<p>RemindMe ist eine Dienstprogramm-App für Erinnerungen, Alarme, Termine, Notizen, Ziele, Zähler und Medikamentenpläne. Ich veröffentliche und betreibe RemindMe. Diese Richtlinie erläutert die Verarbeitung durch die Android-App.</p>
+<h2>1. Verantwortlicher und Kontakt</h2><p>Ich bin der Verantwortliche für die von RemindMe verarbeiteten personenbezogenen Daten. Bei Fragen zum Datenschutz oder Anfragen zur Ausübung Ihrer Rechte kontaktieren Sie mich unter <a href="mailto:bilal.elgin.info@gmail.com">bilal.elgin.info@gmail.com</a>.</p>
+<h2>2. Verarbeitete Daten</h2><p>RemindMe kann Erinnerungen, Termine, Daten, Uhrzeiten, Orte, Beschreibungen, Notizen, Medikamentendetails, Alarmeinstellungen, Zähler, Anhänge und andere Informationen speichern, die Sie eingeben oder speichern möchten. Texte, Bilder, PDF-Seiten und Spracherkennungsergebnisse werden nur verarbeitet, wenn Sie die zugehörige Funktion anfordern. Der Standort ist optional und wird für das Wetter bei Alarmen verwendet; die zuletzt autorisierten Koordinaten und der Zeitpunkt können lokal gespeichert werden. Für die App ist kein Konto erforderlich, und sie erhebt nicht absichtlich Werbekennungen, Analyseprofile oder Kontaktlisten.</p>
+<h2>3. Lokale Verarbeitung und intelligentes Verständnis</h2><p>Die deterministische semantische Engine analysiert Texte auf dem Telefon und extrahiert mögliche Daten, Uhrzeiten, Adressen, Personen, Organisationen, Erinnerungen und Formularfelder. OCR verwendet PaddleOCR-VL lokal, nachdem ich Ihre Bestätigung zum Herunterladen des Modells eingeholt habe. Das OCR-Modell und das optionale lokale Sprachmodell werden vor der Installation überprüft. Es werden keine Erinnerungstexte, gespeicherten Notizen, OCR-Dokumente oder Eingaben für die lokale semantische Analyse an einen KI-Server gesendet. Die Ergebnisse sind Vorschläge: Sie prüfen sie und speichern sie selbst.</p>
+<h2>4. Sprache und externe Sprachdienste</h2><p>Für die Spracheingabe wird der auf Ihrem Gerät ausgewählte Android-Spracherkennungsdienst verwendet. Dieser Dienst kann Audio auf dem Gerät verarbeiten oder an seinen Anbieter senden und möglicherweise eine Internetverbindung erfordern. Der Anbieter kontrolliert diese Verarbeitung gemäß seinen eigenen Bedingungen. RemindMe erstellt keine dauerhafte Audioaufnahme; der erkannte Text wird Ihnen zur Überprüfung angezeigt.</p>
+<h2>5. Netzwerkdienste</h2><p>Wenn Sie die entsprechende Funktion verwenden, kann die App Hugging Face kontaktieren, um ein Modell herunterzuladen, für das Sie Ihre Zustimmung erteilt haben, GitHub, um nach optionalen Updates des semantischen Wissens zu suchen, Pastebin, um optionale Update-Metadaten abzurufen, und Open-Meteo, um Wetterdaten für einen autorisierten Standort abzurufen. Diese Dienste erhalten übliche Verbindungs- oder Anfragedaten und gegebenenfalls die angeforderten Koordinaten oder eine öffentliche Update-/Modellanfrage; sie erhalten von RemindMe keine gespeicherten Erinnerungen oder OCR-Dokumente. Externe Links, das Teilen und die Installation eines Updates werden vom Nutzer veranlasst.</p>
+<h2>6. Berechtigungen</h2><p>Der Kamerazugriff wird nur für ein Foto angefordert. Der Mikrofonzugriff wird nur für die Spracheingabe angefordert. Der Standortzugriff wird nur für optionales Wetter bei Alarmen angefordert. Benachrichtigungen, genaue Alarme, Vibration, Vollbildzugriff für Alarme, Empfang von Startsignalen und Berechtigungen für Vordergrunddienste unterstützen Erinnerungen, Alarme sowie vom Nutzer gestartete Downloads oder Analysen. Das Internet wird für die oben beschriebenen Netzwerkdienste verwendet. Sie können optionale Berechtigungen verweigern; die zugehörige Funktion ist dann möglicherweise nicht verfügbar, während gewöhnliche Erinnerungen weiterhin funktionieren.</p>
+<h2>7. Speicherung und Aufbewahrung</h2><p>Gespeicherte Daten verbleiben im privaten Speicher der App, bis Sie sie löschen, den Eintrag entfernen oder die App deinstallieren. Temporäre Kameradateien werden nach der Verarbeitung oder dem Abbruch gelöscht. Bei einem abgebrochenen Modelldownload kann ein nicht installiertes Teilmodell erhalten bleiben, damit ein späterer, vom Nutzer genehmigter Versuch fortgesetzt werden kann; es gilt erst nach erfolgreicher Überprüfung als verwendbar. Android-Backups sind im Manifest deaktiviert.</p>
+<h2>8. Rechtsgrundlagen und Weitergabe</h2><p>Ich verarbeite von Ihnen eingegebene Daten, um die angeforderten App-Funktionen bereitzustellen; dies beruht auf der Erfüllung des angeforderten Dienstes und gegebenenfalls auf Ihrer Einwilligung zu Berechtigungen oder optionalen Downloads. Zur Aufrechterhaltung der Sicherheit und optionaler Update-Mechanismen stütze ich mich auf berechtigte Interessen. Ich verkaufe keine personenbezogenen Daten und gebe gespeicherte Erinnerungsinhalte nicht zu Werbezwecken weiter. Ein Drittanbieter für Spracherkennung, ein Wetterdienst oder ein Download-Host kann Netzwerkmetadaten verarbeiten, und der Anbieter des Spracherkennungsdienstes kann Audio wie oben beschrieben verarbeiten.</p>
+<h2>9. Rechte und Beschwerden</h2><p>Sie können per E-Mail Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung oder Informationen über die Verarbeitung beantragen. Sie können Ihre Einwilligung zu einer optionalen Berechtigung oder Funktion jederzeit widerrufen; dies berührt nicht die Rechtmäßigkeit der zuvor erfolgten Verarbeitung. Sie können sich bei der Aufsichtsbehörde beschweren, einschließlich der CNIL in Frankreich. Ich werde innerhalb der nach geltendem Recht vorgeschriebenen Frist antworten.</p>
+<h2>10. Kinder und Änderungen</h2><p>RemindMe ist eine allgemeine Dienstprogramm-App für Erinnerungen und unterliegt keiner besonderen Altersbeschränkung hinsichtlich ihrer Funktionalität. Ich gestalte sie nicht wissentlich so, dass personenbezogene Daten von Kindern erhoben werden. Ich kann diese Richtlinie aktualisieren, wenn sich die Verarbeitung durch die App ändert, und werde die aktuelle Fassung unter der Adresse der Richtlinie veröffentlichen.</p>
+</body></html>
